@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 body {
@@ -16,6 +17,12 @@ body {
     flex-direction: column;
     margin: 0 auto;
 }
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 
 nav {
     width: min(1350px, 100%);
@@ -118,6 +125,7 @@ nav {
     width: 100%;
     height: 100%;
     background-color: #ececec;
+    height: 100%;
     margin-bottom: 5rem;
 }
 
@@ -128,7 +136,7 @@ nav {
 
 .try {
     width: 90%;
-    height: 250px;
+    height: auto;
     background-image: url(https://cdn.prod.website-files.com/66563d83090173fa830e5776/67fd4bc9e6ac1e1b98cf4330_industry-bg-2.jpg);
     border-radius: 35px;
     background-size: cover;
@@ -150,7 +158,8 @@ nav {
     align-items: center;
     gap: 1.3rem;
     padding: 20px;
-    margin: auto 1.3rem;
+    margin: 2rem 1.3rem;
+    
 }
 
 .try .inner .price {
@@ -165,10 +174,6 @@ nav {
 }
 
 .sidebar .down .dropdown-menu .drop-menu {
-    display: none;
-}
-
-.sidebar .down .dropdown-menu .drop-menu {
     background-color: #e0e0e0;
     justify-content: center;
     border-radius: 35px;
@@ -180,7 +185,7 @@ nav {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    width: 80vw;
 }
 
 .sidebar .down .dropdown-menu .drop-menu a {
@@ -276,9 +281,132 @@ h1:first-child {
     transition: 0.5s;
 }
 
+.flow-block p {
+    color: gray;
+}
+
 .hero-img:hover {
     box-shadow: 0px 0px 40px 6px rgb(157, 202, 223);
 }
+
+.flow-block {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flow-block > h2, .flow-block > p {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 80vw;
+    max-width: 480px;
+}
+
+.flow-block > h2 {
+    margin-bottom: 1rem;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.flow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 3rem 0.7rem;
+}
+
+.flow-item {
+    background-color: #ececec;
+    padding: 1.2rem 1rem;
+    border-radius: 30px;
+    width: 90vw;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.4s;
+    gap: 1rem;
+}
+
+.short {
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.short h3, .short p {
+    transition-duration: 0.4s;
+}
+
+.short h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: gray;
+}
+
+.short:hover h3, .short:hover p{
+    color: rgb(52, 52, 52);
+}
+
+.long ul {
+    list-style-type: disc;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: gray;
+}
+
+.long {
+    display: none;
+    flex-direction: column;
+    transition: 0.4s;
+}
+
+.learn-more-btn {
+    width: 100%;
+    background-color: #ececec;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.7rem;
+    border-radius: 40px;
+    transition-duration: 0.4s;
+}
+
+.learn-more-btn:hover {
+    background-color: rgb(53, 53, 53);
+    color: #ececec;
+}
+
+.active {
+    background-color: #d6d6d6;
+}
+
+.active .short {
+    background-color: #d6d6d6;
+}
+
+.active .short h3 {
+    color: black;
+}
+
+.active .long {
+    display: flex;
+}
+
+
+
 
 @media (max-width: 990px) {
     .menu-btn {
