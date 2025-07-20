@@ -405,6 +405,72 @@ h1:first-child {
     display: flex;
 }
 
+/* Second Main Block */
+
+.magic-block {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.magic-block h2, .magic-block>p {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 85vw;
+    max-width: 950px;
+}
+
+.magic-block h2 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.magic-block p {
+    color: gray;
+    margin-bottom: 2.4rem;
+}
+
+.magic-container {
+    display: flex;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.magic-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.magic-item {
+    padding: 1rem;
+    width: 100%;
+    background-color: #d6d6d6;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.magic-item img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.magic-item h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 
 
 
@@ -469,5 +535,31 @@ h1:first-child {
         overflow: auto;
         background-size: cover;
         margin: 3rem 0 3rem 0.7rem;
+    }
+
+    /*Second Block Responsive */
+
+    .magic-block h2, .magic-block>p {
+        text-align: center;
+    }
+
+    .magic-block h2 {
+        font-size: 3rem;
+        margin-top: 2.5rem;
+    }
+
+    .magic-block>p {
+        font-size: 1.5rem;
+        max-width: 450px;
+        margin-bottom: 2rem;
+    }
+
+    .magic-col {
+        width: 48%;
+        height: auto
+    }
+
+    .magic-item {
+        height: auto;
     }
 }
