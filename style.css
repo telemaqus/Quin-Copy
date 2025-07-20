@@ -301,8 +301,8 @@ h1:first-child {
     text-align: left;
     margin-left: 1rem;
     margin-right: 1rem;
-    width: 80vw;
-    max-width: 480px;
+    width: 85vw;
+    max-width: 950px;
 }
 
 .flow-block > h2 {
@@ -325,7 +325,7 @@ h1:first-child {
     padding: 1.2rem 1rem;
     border-radius: 30px;
     width: 90vw;
-    max-width: 500px;
+    max-width: 950px;
     display: flex;
     flex-direction: column;
     transition-duration: 0.4s;
@@ -423,5 +423,51 @@ h1:first-child {
 
     .hero-block p {
         font-size: 16px;
+    }
+}
+
+@media (min-width: 991px) {
+    .flow-wrapper {
+        display: flex;
+        gap: 0;
+        margin: 0 auto;
+        width: 90vw;
+        max-width: 1300px;
+        height: auto;
+    }
+
+    .flow-block h2, .flow-block>p {
+        text-align: center;
+    }
+
+    .flow-block h2 {
+        font-size: 3rem;
+        margin-top: 2.5rem;
+    }
+
+    .flow-block>p {
+        font-size: 1.5rem;
+        max-width: 450px;
+        margin-bottom: 2rem;
+    }
+
+    .flow-container {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .flow-item {
+        width: 100%;
+    }
+
+    .side-img {
+        background-image: url(https://cdn.prod.website-files.com/66563d83090173fa830e5776/67e58e8e84f70d9a28544475_sales-bg.jpg);
+        height: auto;
+        width: 50%;
+        border-radius: 30px;
+        display: block;
+        overflow: auto;
+        background-size: cover;
+        margin: 3rem 0 3rem 0.7rem;
     }
 }
