@@ -556,10 +556,10 @@ h1:first-child {
 
     .magic-col {
         width: 48%;
-        height: auto
+        height: auto;
     }
 
     .magic-item {
-        height: auto;
+        height: 100%;
     }
 }
