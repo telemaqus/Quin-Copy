@@ -23,6 +23,9 @@ body {
     font-weight: 500;
 }
 
+nav a, nav span{
+        font-size: 1.2rem;
+}
 
 nav {
     width: min(1350px, 100%);
@@ -121,7 +124,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     width: 100%;
     height: 100%;
     background-color: #ececec;
@@ -223,6 +226,7 @@ h1:first-child {
     max-width: 600px;
     font-size: 20px;
     margin: 0 auto;
+    color: gray;
 }
 
 .hero-block .buttons {
@@ -254,7 +258,7 @@ h1:first-child {
 }
 
 .hero-btn-one:hover {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(98, 98, 98);
 }
 
 .get-started-btn {
@@ -359,9 +363,9 @@ h1:first-child {
 
 .long ul {
     list-style-type: disc;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -493,6 +497,10 @@ h1:first-child {
 }
 
 @media (min-width: 991px) {
+    .hero-btn-one, .hero-btn-two {
+        font-size: 1.2rem;
+    }
+
     .flow-wrapper {
         display: flex;
         gap: 0;
@@ -551,7 +559,7 @@ h1:first-child {
     .magic-block>p {
         font-size: 1.5rem;
         max-width: 450px;
-        margin-bottom: 2rem;
+        margin-bottom: 3.5rem;
     }
 
     .magic-col {
@@ -561,5 +569,15 @@ h1:first-child {
 
     .magic-item {
         height: 100%;
+        padding: 1.5rem;
+    }
+
+    .magic-item h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .magic-item p {
+        font-size: 1.2rem;
     }
 }
